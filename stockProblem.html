@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consumption</title>
+    <title>Apples Stock</title>
+
+     <title>Consumption</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -16,25 +18,24 @@
 </head>
 <body>
     
-     <div class="container">
-        <h1 class="text-center mt-5">Consumption</h1>
+    <div class="container">
+        <h1 class="text-center mt-5">Apples Stock</h1>
 
-        <div class="mb-3">
-            <label class="form-label">Enter Gallons</label>
-            <input type="number" id="gallons" class="form-control">
+         <div class="mb-3">
+            <label class="form-label">Enter Stock of Apples</label>
+            <input type="number" id="applesStock" class="form-control">
         </div>
 
         <div class="mb-3">
-            <label class="form-label">Enter Consumption</label>
-            <input type="number" id="consumption" class="form-control">
+            <label class="form-label">Enter Sold Apples</label>
+            <input type="number" id="applesSold" class="form-control">
         </div>
 
-        <p class="display-3" id="result"></p>
+        <p id="result"></p>
 
-        <button onclick="drive()" class="btn btn-primary">Drive</button>
+        <button onclick="sellApples()" class="btn btn-primary">Sell</button>
+    </div>
 
-     </div>
-
-     <script src="consumption.js"></script>
+    <script src="stockProblem.js"></script>
 </body>
 </html>

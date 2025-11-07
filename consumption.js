@@ -10,7 +10,12 @@ function drive(){
 
     let result = document.getElementById("result");
 
+
     let message = `The driven miles are ${drivenMiles} and your tank capacity is ${gallons.value}`
+
+    if (gallons.value <= 0){
+        message = `Empty Tank!`
+    }
 
     result.textContent = message;
 }
